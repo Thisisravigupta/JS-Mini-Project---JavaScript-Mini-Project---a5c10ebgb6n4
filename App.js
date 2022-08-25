@@ -38,7 +38,7 @@ function generate() {
   }
 
   password.innerText = myPassWord;
-  //   console.log(myPassWord);
+    console.log(myPassWord);
 }
 
 function generateX() {
@@ -91,7 +91,7 @@ function addSymbol() {
 copy.addEventListener("click", () => {
   let textarea = document.createElement("textarea");
   let PassRandom = password.innerText;
-  if (!PassRandom) {
+  if (PassRandom === "YourPassword") {
     return;
   }
   textarea.value = PassRandom;
@@ -100,4 +100,4 @@ copy.addEventListener("click", () => {
   document.execCommand("copy");
   textarea.remove();
   alert("Password Copied");
-});
+}); 

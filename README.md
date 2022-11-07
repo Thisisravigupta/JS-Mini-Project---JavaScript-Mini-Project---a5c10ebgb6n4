@@ -1,1 +1,2 @@
-# html-css-js-project-boilerplate
+# Hosted link
+https://password-generator-by-ravi.netlify.app/
